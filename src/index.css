@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fondo / superficies */
+  --color-bg: #14141c;
+  --color-surface: #1f1f29;
+  --color-border-subtle: #4a4a55;
+
+  /* Texto */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a0a0ac;
+
+  /* Accent primario (lila) */
+  --color-accent: #7f77dd;
+  --color-accent-light: #afa9ec;
+  --color-accent-dark: #26215c;
+
+  /* Accent secundario (dorado) */
+  --color-gold: #fac775;
+  --color-gold-dark: #412402;
+
+  /* Tags de tecnologías */
+  --color-tag-pink: #ed93b1;
+  --color-tag-pink-bg: #4b1528;
+  --color-tag-teal: #9fe1cb;
+  --color-tag-teal-bg: #04342c;
+
+  /* Tipografía */
+  --font-display: "Poppins", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
